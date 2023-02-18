@@ -22,7 +22,7 @@ local function GetCurve(frequency, intensity, isLowHealth)
 end
 
 RNS.RenderStepped:Connect(function()
-local humanoid: Humanoid = char:FindFirstChildOfClass("Humanoid")
+local humanoid = char:FindFirstChildOfClass("Humanoid")
 local isLowHealth = humanoid.Health <= 25 -- set low health threshold here
 local velocity = math.round(Vector3.new(HRP.AssemblyLinearVelocity.X, 0, HRP.AssemblyLinearVelocity.Z).Magnitude)
     
